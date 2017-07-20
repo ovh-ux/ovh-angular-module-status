@@ -1,0 +1,7 @@
+src/**/translations/*.json
+node_modules
+.tmp
+.idea
+npm-debug.log
+bower_components
+.work

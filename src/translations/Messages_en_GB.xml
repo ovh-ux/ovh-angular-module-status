@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_menu_title" qtlid="33250">Notifications</translation>
+   <translation id="status_menu_see_all" qtlid="401914">See all the notifications </translation>
+   <translation id="status_menu_none" qtlid="401784">No event </translation>
+   <translation id="status_incident_inProgress" qtlid="401927">Ongoing <span class="bold">incident</span></translation>
+   <translation id="status_incident_finished" qtlid="401940">Incident resolved </translation>
+   <translation id="status_maintenance_planned" qtlid="401953"><span class="bold">Planned</span> maintenance </translation>
+   <translation id="status_maintenance_inProgress" qtlid="401966"><span class="bold">Ongoing</span> maintenance </translation>
+   <translation id="status_maintenance_finished" qtlid="401979">Maintenance completed </translation>
+   <translation id="status_intro" qtlid="401992">You are currently testing OvhMyStatus: incidents, updates and maintenance related to your OVH services.</translation>
+   <translation id="status_beta_warning" qtlid="402005">OvhMyStatus is currently in beta, only VPS and Public Cloud services concerned. We are working to integrate most other OVH products.</translation>
+   <translation id="status_extensive_list" qtlid="402018">See the complete list of events on <a href="http://travaux.ovh.net:51080">http://travaux.ovh.net:51080</a></translation>
+
+   <translation id="status_menu_beta_title" qtlid="403088">OVH Status BETA</translation>
+   <translation id="status_menu_beta_text" qtlid="403101">OVH is improving every day: exclusively for you, here is a version of the OVH Status notifications.</translation>
+   <translation id="status_menu_beta_contact" qtlid="403114">Send your comments to feedbackstatus@corp.ovh.com</translation>
+</translations>

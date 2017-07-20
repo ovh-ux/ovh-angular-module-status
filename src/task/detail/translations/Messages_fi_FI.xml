@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Ilmoitukset</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Takaisin listaan</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Tehtävän haku ei onnistu</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Tapahtuman tietoja ladataan</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Viite</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Päivitykset</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Tuote, johon tilanne vaikuttaa</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">Ei päivityksiä juuri nyt</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Päättyy</translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Alkaa</translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Edistyminen</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>

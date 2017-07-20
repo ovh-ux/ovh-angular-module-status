@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Pranešimai</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Grįžti į sąrašą</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Neįmanoma atkurti užduoties</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Įvykis įkeliamas</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Aprašas</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Atnaujinimai</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Produktas, susijęs su vykdomais darbais</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">Šiuo metu jokio atnaujinimo</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Pabaigos data</translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Pradžios data</translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Pažanga</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}}%</translation>
+</translations>

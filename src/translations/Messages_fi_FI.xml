@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_menu_title" qtlid="33250">Ilmoitukset</translation>
+   <translation id="status_menu_see_all" qtlid="401914">Katso kaikki ilmoitukset</translation>
+   <translation id="status_menu_none" qtlid="401784">Ei tapahtumia</translation>
+   <translation id="status_incident_inProgress" qtlid="401927">Häiriötilanne <span class="bold">meneillään</span></translation>
+   <translation id="status_incident_finished" qtlid="401940">Häiriö korjattu</translation>
+   <translation id="status_maintenance_planned" qtlid="401953">Huoltotyö <span class="bold">ajoitettu</span></translation>
+   <translation id="status_maintenance_inProgress" qtlid="401966">Huoltotyö <span class="bold">käynnissä</span></translation>
+   <translation id="status_maintenance_finished" qtlid="401979">Huoltotyö valmis</translation>
+   <translation id="status_intro" qtlid="401992">Käytössäsi on OvhMyStatus, joka keskittää OVH:n palveluiden häiriötilanteet, päivitykset ja huoltotyöt.</translation>
+   <translation id="status_beta_warning" qtlid="402005">OvhMyStatus on vielä betavaiheessa, johon kuuluu  ainoastaan VPS- ja Public Cloud -palveluiden ilmoitukset. Tulevaisuudessa suurin osa muista OVH:n tuotteista tullaan lisäämään palveluun.</translation>
+   <translation id="status_extensive_list" qtlid="402018">Katso kaikki tiedotteet <a href="http://travaux.ovh.net:51080">http://travaux.ovh.net:51080</a></translation>
+
+   <translation id="status_menu_beta_title" qtlid="403088">OVH Status (beta)</translation>
+   <translation id="status_menu_beta_text" qtlid="403101">OVH kehittyy joka päivä: erityisesti sinulle OVH Status - ilmoituksien versio.</translation>
+   <translation id="status_menu_beta_contact" qtlid="403114">Lähetä palautteesi osoitteeseen feedbackstatus@corp.ovh.com</translation>
+</translations>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Notifications</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Go back to the list</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Unable to retrieve the task </translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Event loading </translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Reference</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Updates</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Products affected</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">No update to display at the moment </translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Ends on </translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Starts on </translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Processing</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>

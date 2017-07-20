@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Benachrichtigungen</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Zurück zur Liste</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Task kann nicht gefunden werden</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Vorgang in Bearbeitung</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Referenz</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Update</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Betreffendes Produkt</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">Momentan sind keine neuen Updates verfügbar</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Ende am</translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Beginn am</translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Fortschritt </translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>

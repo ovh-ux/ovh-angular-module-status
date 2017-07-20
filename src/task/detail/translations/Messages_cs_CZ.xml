@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Oznámení</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Vrátit se na seznam</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Úkol nelze načíst</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Načítání události</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Odkaz</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Aktualizace</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Ovlivněný produkt</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">V současné době není k dispozici žádná aktualizace</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Konec: </translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Začátek: </translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Postup</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>

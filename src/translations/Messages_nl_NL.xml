@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_menu_title" qtlid="33250">Notificaties</translation>
+   <translation id="status_menu_see_all" qtlid="401914">Alle meldingen bekijken</translation>
+   <translation id="status_menu_none" qtlid="401784">Geen evenementen </translation>
+   <translation id="status_incident_inProgress" qtlid="401927">Incident <span class="bold">wordt geladen</span></translation>
+   <translation id="status_incident_finished" qtlid="401940">Incident opgelost</translation>
+   <translation id="status_maintenance_planned" qtlid="401953"><span class="bold">Gepland onderhoud</span></translation>
+   <translation id="status_maintenance_inProgress" qtlid="401966"><span class="bold">Lopend onderhoud</span></translation>
+   <translation id="status_maintenance_finished" qtlid="401979">Onderhoud beëindigd </translation>
+   <translation id="status_intro" qtlid="401992">Momenteel test u OvhMyStatus: incidenten, updates en onderhoud van uw OVH diensten.</translation>
+   <translation id="status_beta_warning" qtlid="402005">OvhMyStatus is momenteel in beta. Alleen VPS en Public Cloud diensten worden weergegeven. We werken eraan de andere OVH producten te integreren.</translation>
+   <translation id="status_extensive_list" qtlid="402018">Bekijk de incidentenlijst op <a href="http://travaux.ovh.net:51080">http://travaux.ovh.net:51080</a></translation>
+
+   <translation id="status_menu_beta_title" qtlid="403088">OVH Status BETA</translation>
+   <translation id="status_menu_beta_text" qtlid="403101">OVH s'améliore tous les jours : en exclusivité pour vous une version des notifications OVH Status.</translation>
+   <translation id="status_menu_beta_contact" qtlid="403114">Faites parvenir vos commentaires à feedbackstatus@corp.ovh.com</translation>
+</translations>

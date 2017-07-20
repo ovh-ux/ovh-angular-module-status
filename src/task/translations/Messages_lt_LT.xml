@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_tasks_list_title" qtlid="401732">Pranešimų sąrašas</translation>
+   <translation id="status_tasks_alert_title" qtlid="401745">Valdyti mano įspėjimus</translation>
+   <translation id="status_tasks_action_title" qtlid="72809">Veiksmai</translation>
+   <translation id="status_tasks_init_error" qtlid="401758">Neįmanoma įkelti įvykių</translation>
+   <translation id="status_tasks_list_title_product" qtlid="66752">Produktas</translation>
+   <translation id="status_tasks_list_title_title" qtlid="16469">Pavadinimas</translation>
+   <translation id="status_tasks_list_type_title" qtlid="2642">Tipas</translation>
+   <translation id="status_tasks_list_state_title" qtlid="8230">Būsena</translation>
+   <translation id="status_tasks_list_date_title" qtlid="24523">Data</translation>
+   <translation id="status_tasks_list_impact_label_fullUnavailability" qtlid="403049">Paslauga neprieinama</translation>
+   <translation id="status_tasks_list_impact_label_downtime" qtlid="403049">Paslauga neprieinama</translation>
+   <translation id="status_tasks_list_impact_label_partialUnavailability" qtlid="403062">Pasenusi paslauga</translation>
+   <translation id="status_tasks_list_impact_label_none" qtlid="403075">Poveikis nežymus</translation>
+   <translation id="status_tasks_list_impact_label_unknown" qtlid="403075">Poveikis nežymus</translation>
+   <translation id="status_tasks_list_status_label_planned" qtlid="37455">Suplanuota</translation>
+   <translation id="status_tasks_list_status_label_inProgress" qtlid="26383">Vykdoma</translation>
+   <translation id="status_tasks_list_status_label_finished" qtlid="8662">Baigta</translation>
+   <translation id="status_tasks_list_details_title" qtlid="401771">Papildoma informacija</translation>
+   <translation id="status_tasks_list_no_tasks" qtlid="401784">Jokio įvykio</translation>
+   <translation id="status_tasks_list_loading_tasks" qtlid="401797">Jūsų įvykiai įkeliami</translation>
+   <translation id="status_tasks_list_type_label_incident" qtlid="68036">Gedimas</translation>
+   <translation id="status_tasks_list_type_label_maintenance" qtlid="114222">Aptarnavimas</translation>
+   <translation id="status_tasks_list_type_label_upgrade" qtlid="26863">Naujinimas</translation>
+   <translation id="status_tasks_list_product_label_VPS" qtlid="23083">VPS</translation>
+   <translation id="status_tasks_list_product_label_PublicCloud" qtlid="251655">Public Cloud</translation>
+   <translation id="status_tasks_list_see_more" qtlid="225192">Peržiūrėti detaliau</translation>
+</translations>

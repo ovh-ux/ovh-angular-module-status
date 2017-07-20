@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Notifications</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Retour à la liste</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Impossible de récupérer la tâche</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Chargement de l'événement en cours</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Référence</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Mises à jour</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Produit impacté</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">Aucun mise à jour à afficher pour le moment</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Fin le</translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Début le</translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Progression</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>

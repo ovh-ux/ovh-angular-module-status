@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_menu_title" qtlid="33250">Oznámení</translation>
+   <translation id="status_menu_see_all" qtlid="401914">Zobrazit všechna upozornění</translation>
+   <translation id="status_menu_none" qtlid="401784">Žádná událost</translation>
+   <translation id="status_incident_inProgress" qtlid="401927">Probíhající <span class="bold">incident</span></translation>
+   <translation id="status_incident_finished" qtlid="401940">Incident vyřešen</translation>
+   <translation id="status_maintenance_planned" qtlid="401953"><span class="bold">Plánovaná</span> údržba</translation>
+   <translation id="status_maintenance_inProgress" qtlid="401966"><span class="bold">Probíhající</span> údržba</translation>
+   <translation id="status_maintenance_finished" qtlid="401979">Údržba dokončena</translation>
+   <translation id="status_intro" qtlid="401992">Právě testujete nástroj OvhMyStatus: v tomto okně naleznete informace o incidentech, aktualizacích a údržbách týkajících se Vašich služeb.</translation>
+   <translation id="status_beta_warning" qtlid="402005">K dispozici je zatím pouze betaverze nástroje OvhMyStatus. Upozornění se týkají pouze služeb Public Cloud a VPS. V současné době pracujeme na integraci do ostatních služeb OVH.</translation>
+   <translation id="status_extensive_list" qtlid="402018">Kompletní přehled událostí naleznete na <a href="http://travaux.ovh.net:51080">http://travaux.ovh.net:51080</a></translation>
+
+   <translation id="status_menu_beta_title" qtlid="403088">OVH Status BETA</translation>
+   <translation id="status_menu_beta_text" qtlid="403101">Společnost OVH prochází neustálým vývojem: vyzkoušejte exkluzivní betaverzi nástroje OVH Status.</translation>
+   <translation id="status_menu_beta_contact" qtlid="403114">Návrhy na zlepšení zasílejte na: feedbackstatus@corp.ovh.com</translation>
+</translations>

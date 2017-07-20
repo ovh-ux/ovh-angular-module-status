@@ -1,0 +1,23 @@
+<div class="status-section-header">
+    <header role="banner">
+        <h1 class="oui-header_1" translate="status_menu_title"></h1>
+    </header>
+
+    <nav role="navigation">
+        <responsive-tabs>
+            <responsive-tab data-state="{{ ::'status.task' }}"
+                dropdown-title="{{'status_tasks_list_title'|translate}}">
+                <span data-translate="status_tasks_list_title"></span>
+            </responsive-tab>
+            <!--responsive-tab data-state="{{ ::'status.task.alert' }}"
+                dropdown-title="{{'status_tasks_alert_title'|translate}}">
+                <span data-translate="status_tasks_alert_title"></span>
+            </responsive-tab-->
+            <responsive-tab-more>
+                <i class="fa fa-plus"></i>
+            </responsive-tab-more>
+        </responsive-tabs>
+    </nav>
+</div>
+
+<main class="status-task-section-content" role="main" data-ui-view="@taskView"></main>

@@ -1,0 +1,39 @@
+.status-task-dl {
+    margin-bottom: 0;
+    dt {
+        width: auto;
+    }
+    dd {
+        margin-left: 0;
+        @media (min-width: @v6-min-with) {
+            margin-left: 90px;
+        }
+    }
+}
+
+.status-task__label {
+    font-size: 100%;
+    border-radius: 1.2em;
+    padding: .4em 1.2em .6em;
+    margin-right: 1em;
+    display: inline-block;
+    &_normal {
+        color: #6B6B6B;
+        border: solid 1px #6B6B6B;
+    }
+    &_major {
+        background-color: #FF6469;
+    }
+    &_warning {
+        background-color: #FF9D74;
+    }
+    &_minor {
+        background-color: #36CDF0;
+    }
+}
+
+.status-task-detail-reply {
+    padding: 15px 10px;
+    background-color: #e9ebe7;
+    margin: 5px 15px;
+}

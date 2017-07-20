@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translations>
+   <translation id="status_task_detail_title" qtlid="33250">Powiadomienia</translation>
+   <translation id="status_task_detail_back" qtlid="252477">Powrót do listy</translation>
+   <translation id="status_task_detail_init_error" qtlid="401810">Nie można pobrać wydarzenia</translation>
+   <translation id="status_task_detail_loading_task" qtlid="401823">Pobieranie wydarzeń w trakcie</translation>
+   <translation id="status_task_detail_id_label" qtlid="16445">Opis</translation>
+   <translation id="status_task_detail_reply_title" qtlid="401836">Aktualizacje</translation>
+   <translation id="status_task_detail_impacted_title" qtlid="401849">Produkt, którego dotyczą prace</translation>
+   <translation id="status_task_detail_no_reply" qtlid="401862">Brak aktualizacji do wyświetlenia w chwili obecnej</translation>
+   <translation id="status_tasks_detail_end" qtlid="401875">Zakończenie dnia</translation>
+   <translation id="status_tasks_detail_start" qtlid="401888">Początek dnia</translation>
+   <translation id="status_tasks_detail_progress" qtlid="354496">Postęp</translation>
+   <translation id="status_tasks_detail_progress_value" qtlid="401901">{{value}} %</translation>
+</translations>
