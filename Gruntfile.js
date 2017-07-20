@@ -55,10 +55,9 @@ module.exports = function (grunt) {
                 flatten: false,
                 cwd: "<%= srcdir %>",
                 src: [
-                    "translations/*.xml"
+                    "**/translations/*.xml"
                 ],
                 dest: "<%= distdir %>",
-                filter: "isFile",
                 extendFrom: ["fr_FR", "en_GB"]
             }
         },
