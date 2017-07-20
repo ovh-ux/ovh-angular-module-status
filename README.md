@@ -48,15 +48,14 @@ Inject module
 
 ```javascript
  angular.module("myApp", ["ovh-angular-module-status"]);
- ```
- ```
+```
 
- # Related links
+# Related links
 
   * Contribute: https://github.com/ovh-ux/ovh-angular-module-status/blob/master/CONTRIBUTING.md
   * Report bugs: https://github.com/ovh-ux/ovh-angular-module-status/issues
   * Get latest version: https://github.com/ovh-ux/ovh-angular-module-status
 
- # License
+# License
 
  See https://github.com/ovh/ovh-angular-module-status/blob/master/LICENSE.md
