@@ -26,7 +26,7 @@ npm install ovh-angular-module-status --save
 
 ```bash
     git clone https://github.com/ovh-ux/ovh-angular-module-status.git
-    cd ovh-angular-otrs
+    cd ovh-angular-module-status
     npm install
     bower install
 ```
