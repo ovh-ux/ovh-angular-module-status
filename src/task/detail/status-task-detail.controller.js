@@ -1,4 +1,4 @@
-angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", function (Status, Toast, $stateParams, $translate) {
+angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", function (OvhApiStatus, Toast, $stateParams, $translate) {
     var self = this;
 
 
@@ -12,7 +12,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", f
     function init () {
         self.loading.init = true;
 
-        return Status.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
             self.task = _.find(tasks, function (task) {
                 return task.uuid === self.currentTaskId;
             });
