@@ -10,13 +10,13 @@ angular.module("ovh-angular-module-status").config(["$stateProvider", function (
         templateUrl: "app/module-status/status.html",
         "abstract": true
     });
-}]).run(["managerNavbar", "StatusService", "Status", "$translate", "$translatePartialLoader", "$q", function (managerNavbar, StatusService, Status, $translate, $translatePartialLoader, $q) {
+}]).run(["managerNavbar", "StatusService", "OvhApiStatus", "$translate", "$translatePartialLoader", "$q", function (managerNavbar, StatusService, OvhApiStatus, $translate, $translatePartialLoader, $q) {
 
     $translatePartialLoader.addPart("ovh-angular-module-status");
 
     $q.all([
         $translate.refresh(),
-        Status.Task().Lexi().query()
+        OvhApiStatus.Task().Lexi().query()
     ]).then(function (responses) {
         return responses[1].$promise || $q.when([]);
     }).then(function (_tasks) {
@@ -160,7 +160,7 @@ angular.module("ovh-angular-module-status")
         });
     }]);
 
-angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", ["Status", "Toast", "$stateParams", "$translate", function (Status, Toast, $stateParams, $translate) {
+angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", ["OvhApiStatus", "Toast", "$stateParams", "$translate", function (OvhApiStatus, Toast, $stateParams, $translate) {
     var self = this;
 
 
@@ -174,7 +174,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", [
     function init () {
         self.loading.init = true;
 
-        return Status.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
             self.task = _.find(tasks, function (task) {
                 return task.uuid === self.currentTaskId;
             });
@@ -203,7 +203,7 @@ angular.module("ovh-angular-module-status")
         });
     }]);
 
-angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", ["Status", "StatusService", "Toast", "$translate", function (Status, StatusService, Toast, $translate) {
+angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", ["OvhApiStatus", "StatusService", "Toast", "$translate", function (OvhApiStatus, StatusService, Toast, $translate) {
     var self = this;
 
     this.loading = {
@@ -218,7 +218,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", ["Statu
     function init () {
         self.loading.init = true;
 
-        return Status.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
             self.tasks = _.map(tasks, StatusService.augmentStatus);
             self.tasks = StatusService.orderStatusNotification(self.tasks);
             return self.tasks;

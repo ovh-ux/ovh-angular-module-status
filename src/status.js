@@ -6,13 +6,13 @@ angular.module("ovh-angular-module-status").config(function ($stateProvider) {
         templateUrl: "app/module-status/status.html",
         "abstract": true
     });
-}).run(function (managerNavbar, StatusService, Status, $translate, $translatePartialLoader, $q) {
+}).run(function (managerNavbar, StatusService, OvhApiStatus, $translate, $translatePartialLoader, $q) {
 
     $translatePartialLoader.addPart("ovh-angular-module-status");
 
     $q.all([
         $translate.refresh(),
-        Status.Task().Lexi().query()
+        OvhApiStatus.Task().Lexi().query()
     ]).then(function (responses) {
         return responses[1].$promise || $q.when([]);
     }).then(function (_tasks) {
