@@ -1,6 +1,6 @@
 {
   "name": "ovh-angular-module-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage status",
   "main": "./dist/ovh-angular-module-status.min.js",
   "repository": "ovh-ux/ovh-angular-module-status",
