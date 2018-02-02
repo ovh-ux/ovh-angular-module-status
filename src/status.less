@@ -1,50 +1,37 @@
-
-@StatusTopBackground: #e9ebe7;
-@StatusTopMinHeight: 92px;
-@StatusTextColor: #6B6B6B;
-@StatusTitleColor: #122844;
-@StatusEmptyColor: #797979;
-@StatusEmptyBackgroundColor: #F2F2F2;
-@StatusBetaBackground: #91D9EC;
-
 .status-section-header {
-
-    background-color: @StatusTopBackground;
-    min-height: @StatusTopMinHeight;
-    margin-bottom: 32px;
+    background-color: @oui-color-nurse;
+    min-height: rem-calc(92);
+    margin-bottom: rem-calc(32);
     width: 100%;
 
     > header {
-        padding: 32px 32px 16px;
+        padding: rem-calc(32) rem-calc(32) rem-calc(16);
     }
 
     .tab-container {
-        margin: 0 32px;
-
+        margin: 0 rem-calc(32);
         background-color: transparent;
         box-shadow: none;
 
         .nav {
             &.nav-tabs > li {
-
                 &::after {
                     width: 0%;
                     content: ' ';
                     display: block;
-                    border-bottom: 3px solid @oui-color-turquoise;
+                    border-bottom: rem-calc(3) solid @oui-color-turquoise;
                     position: relative;
                     left: 50%;
                 }
 
                 &.active {
-
                     background-color: transparent;
                     box-shadow: none;
-                    font-weight: 700;
+                    font-weight: @oui-font-bold;
 
-                    &:after {
-                        width:100%;
-                        left:0%;
+                    &::after {
+                        width: 100%;
+                        left: 0%;
                         animation: nav-tabs-border-bounce-animation 1000ms linear 1 both;
                     }
 
@@ -59,150 +46,109 @@
     }
 }
 
-.navbar-notification__icon {
-    padding-left: 34px;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMzAgMzAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojOTNhMWJlO30uY2xzLTJ7b3BhY2l0eTowLjU7fS5jbHMtM3tmaWxsOiM1OTY5N2Q7fS5jbHMtNHtmaWxsOiNiNGJlZDI7c3Ryb2tlOiM5M2ExYmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy01e2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aCk7fS5jbHMtNntmaWxsOiM3ZThmYjE7fS5jbHMtN3tmaWxsOiNlOWViZTc7fTwvc3R5bGU+PGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPjxjaXJjbGUgaWQ9Il9FbGxpcHNlXyIgZGF0YS1uYW1lPSImbHQ7RWxsaXBzZSZndDsiIGNsYXNzPSJjbHMtMSIgY3g9IjEzLjgyIiBjeT0iMTkuNzkiIHI9IjIuODUiLz48L2NsaXBQYXRoPjwvZGVmcz48dGl0bGU+aWNvbi1ub3RpZmljYXRpb248L3RpdGxlPjxnIGNsYXNzPSJjbHMtMiI+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTUsMi4zMUExMi42OSwxMi42OSwwLDEsMSwyLjMxLDE1LDEyLjcsMTIuNywwLDAsMSwxNSwyLjMxbTAtMkExNC42OSwxNC42OSwwLDEsMCwyOS42OSwxNSwxNC42OSwxNC42OSwwLDAsMCwxNSwuMzFaIi8+PC9nPjxsaW5lIGNsYXNzPSJjbHMtNCIgeDE9IjE4LjgiIHkxPSI1LjkzIiB4Mj0iMTguMTQiIHkyPSI3Ljg4Ii8+PGNpcmNsZSBpZD0iX0VsbGlwc2VfMiIgZGF0YS1uYW1lPSImbHQ7RWxsaXBzZSZndDsiIGNsYXNzPSJjbHMtMSIgY3g9IjEzLjgyIiBjeT0iMTkuNzkiIHI9IjIuODUiLz48ZyBjbGFzcz0iY2xzLTUiPjxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIxMS4yMSAxNS41NCA5LjYgMTkuNDIgMTAuMzggMTkuODMgMTcuNjIgMjIuNDIgMTkuMzYgMTcuNDUgMTEuMjEgMTUuNTQiLz48L2c+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNi4zMiwxNi45MywyMSwyMi4xMmwtMS4yNS0yLjkxLDEuODctNXMuNTUtNS0zLjMyLTYuMjNhNS43OSw1Ljc5LDAsMCwwLTcuMDYsMi40OWMtLjQ4LDEuMjEtMS44Nyw1LjA5LTEuODcsNS4wOVoiLz48ZyBjbGFzcz0iY2xzLTIiPjxwYXRoIGNsYXNzPSJjbHMtNyIgZD0iTTE2LjE3LDguNjVhNS42Nyw1LjY3LDAsMCwxLDEuNzguM2MyLjguOTMsMi43LDQuMzgsMi42NSw1LjA2bC0xLjgyLDQuODYtLjE0LjM4LjE2LjM3LjM1LjgxTDksMTYuODJsLjczLS4zMy4zOS0uMTcuMTQtLjRzMS4zOC0zLjg3LDEuODYtNS4wNWE0LjYzLDQuNjMsMCwwLDEsNC0yLjIxbTAtMWE1LjYxLDUuNjEsMCwwLDAtNSwyLjg0Yy0uNDgsMS4yMS0xLjg3LDUuMDktMS44Nyw1LjA5bC0zLDEuMzVMMjEsMjIuMTJsLTEuMjUtMi45MSwxLjg3LTVzLjU1LTUtMy4zMi02LjIzYTYuNjQsNi42NCwwLDAsMC0yLjA5LS4zNVoiLz48L2c+PC9zdmc+);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 0 50%;
-    line-height: inherit;
-}
-
-.navbar-notification__list {
-    overflow-y: auto;
-    max-height: 80vh;
-}
-
-.navbar-notification__body {
-    width: 410px;
-    border-bottom: solid 1px rgba(0,0,0,.08);
-    line-height: 2rem;
-    padding: 12px 0;
-
-    &_none {
-        text-align: center;
-        font-weight: lighter;
+.oui-navbar-menu_notifications {
+    .notification__title {
+        line-height: 1.2;
+        font-size: rem-calc(16);
+        color: @oui-color-sapphire;
     }
-}
 
-.navbar-notification__title {
-     font-weight: 700;
-     font-size: 1.2rem;
-}
-
-.navbar-notification__date {
-    font-weight: lighter;
-    text-align: right;
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.navbar-notification__status {
-    text-align: right;
-}
-
-.navbar-notification-beta {
-    &__box {
-        background-color: @StatusBetaBackground;
-        padding: 15px;
-        font-weight: normal;
+    .notification__email { color: @oui-color-pacific; }
+    
+    .notification__date {
+        font-size: rem-calc(14);
+        color: @oui-color-sapphire;
     }
-    &__title {
-        font-weight: 700;
-        font-size: 1.2rem;
-        margin-top: 0;
-        color: @StatusTitleColor;
+    
+    .notification__intro,
+    .notification__text,
+    .notification__status {
+        margin: 0;
+        font-size: rem-calc(14);
+        color: @oui-color-shuttle;
     }
-    &__text {
-        color: @StatusTextColor;
-        margin: 0 0 2.5px;
-    }
-    &__email {
-        font-weight: 600;
-    }
-}
 
-//It's ugly but it keeps us from using !important everywhere in this class.
-#manager-navbar #navbar .navbar-section#navbar-account .dropdown-menu a.navbar-notification__button {
-    display: inline-block;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    text-align: center;
-    width: auto;
-    border-color: #c3c5c7;
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    line-height: 1;
-    margin: 10px 5px 5px 5px;
-}
+    /* stylelint-disable indentation */
+    .desktop({ width: rem-calc(400); });
+    /* stylelint-enable indentation */
 
-.navbar-notification__footer {
-    text-align: center;
-    width: 410px;
-    line-height: 2rem;
-    &_empty {
-        line-height: 8rem;
-        color: @StatusEmptyColor;
-        background-color: @StatusEmptyBackgroundColor;
+    .notification__title,
+    .notification__text {
+        /* stylelint-disable indentation */
+        .desktop({ float: left; });
+        /* stylelint-enable indentation */
+    }
+
+    .notification__date,
+    .notification__status {
+        /* stylelint-disable indentation */
+        .desktop({ float: right; });
+        /* stylelint-enable indentation */
+    }
+
+    .oui-navbar-menu__item:hover { text-decoration: none; }
+
+    .oui-navbar-menu__item_active {
+        .notification__title,
+        .notification__date { font-weight: @oui-font-semibold; }
     }
 }
 
 @keyframes nav-tabs-border-bounce-animation {
     0% {
-        width:0%;
-        left:50%;
+        width: 0%;
+        left: 50%;
     }
     4% {
-        width:43%;
-        left:28%;
+        width: 43%;
+        left: 28%;
     }
     7.91% {
-        width:88%;
-        left:11%;
+        width: 88%;
+        left: 11%;
     }
     11.91% {
-        width:118.9%;
+        width: 118.9%;
         left: -9.45%;
     }
     15.82% {
-        width:127.5%;
+        width: 127.5%;
         left: -13.5%;
     }
     20.42% {
-        width:119.6%;
+        width: 119.6%;
         left: -9.8%;
     }
     24.92% {
-        width:105.9%;
-        left:-2.95%;
+        width: 105.9%;
+        left: -2.95%;
     }
     29.53% {
-        width:95,98%;
+        width: 95,98%;
         left: 2.5%;
     }
     34.03% {
-        width:93.07%;
-        left:4%;
+        width: 93.07%;
+        left: 4%;
     }
     43.14% {
-        width:98.53%;
-        left:0.74%;
+        width: 98.53%;
+        left: 0.74%;
     }
     52.15% {
-        width:101.739%;
-        left:-0.7%;
+        width: 101.739%;
+        left: -0.7%;
     }
     70.37% {
-        width:99.56%;
-        left:0.22%;
+        width: 99.56%;
+        left: 0.22%;
     }
     88.59% {
-        width:100.11%;
-        left:-0.05%;
+        width: 100.11%;
+        left: -0.05%;
     }
     100% {
-        width:100%;
-        left:0%;
+        width: 100%;
+        left: 0%;
     }
 }

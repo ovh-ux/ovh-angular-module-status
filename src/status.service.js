@@ -1,4 +1,4 @@
-angular.module("ovh-angular-module-status").service("StatusService", function (moment, $translate) {
+angular.module("ovh-angular-module-status").service("StatusService", function ($q, $translate, $translatePartialLoader, moment, OvhApiStatus) {
     "use strict";
 
     var self = this;
@@ -56,5 +56,50 @@ angular.module("ovh-angular-module-status").service("StatusService", function (m
         return _.sortBy(taskList, function (task) {
             return moment(task.dateToShow.date);
         }).reverse();
+    };
+
+    this.getNotificationsMenu = function () {
+        $translatePartialLoader.addPart("ovh-angular-module-status");
+
+        return $q.all({
+            translate: $translate.refresh(),
+            tasks: OvhApiStatus.Task().Lexi().query().$promise
+        }).then(function (result) {
+            var tasks = _.map(result.tasks, function (task) {
+                task.dateToShow = self.getDateToShow(task);
+                return task;
+            });
+            var subLinks = _.map(self.orderStatusNotification(tasks), function (task) {
+                return {
+                    title: task.title,
+                    url: "#/status/task/" + task.uuid,
+                    template:
+                        '<div class="clearfix">' +
+                            '<div class="notification__title">' + task.title + "</div>" +
+                            '<div class="notification__date">' + task.dateToShow.display + "</div>" +
+                        "</div>" +
+                        '<div class="clearfix">' +
+                            '<div class="notification__text">' + task.project + "</div>" +
+                            '<div class="notification__status">' + self.getCurrentStatus(task) + "</div>" +
+                        "</div>"
+                };
+            });
+
+            var headerTemplate =
+                '<h2 class="oui-navbar-menu__title">' + $translate.instant("status_menu_beta_title") + "</h2>" +
+                '<p class="notification__intro">' + $translate.instant("status_intro") + "</p>" +
+                '<a class="notification__email" href="mailto:feedbackstatus@corp.ovh.com">feedbackstatus@corp.ovh.com</a>';
+
+            return {
+                name: "notifications",
+                title: $translate.instant("status_menu_title"),
+                iconClass: "icon-notifications",
+                limitTo: 10,
+                headerTemplate: headerTemplate,
+                footerTitle: $translate.instant("status_menu_see_all"),
+                footerUrl: "#/status/task",
+                subLinks: subLinks
+            };
+        });
     };
 });
