@@ -6,6 +6,9 @@
   "repository": "ovh-ux/ovh-angular-module-status",
   "author": "OVH SAS",
   "license": "BSD-3-Clause",
+  "dependencies": {
+    "less-plugin-remcalc": "^0.0.1"
+  },
   "devDependencies": {
     "eslint": "^4.0.0",
     "eslint-config-ovh": "^0.1.1",
