@@ -112,9 +112,15 @@ angular.module("ovh-angular-module-status").service("StatusService", ["$q", "$tr
                 headerTemplate: headerTemplate,
                 footerTitle: $translate.instant("status_menu_see_all"),
                 footerUrl: "#/status/task",
-                subLinks: subLinks
+                subLinks: subLinks,
+                show: true
             };
-        });
+        })
+            .catch(function () {
+                return $q.resolve({
+                    show: false
+                });
+            });
     };
 }]);
 
