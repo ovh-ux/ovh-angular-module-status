@@ -1,29 +1,25 @@
-angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", function (OvhApiStatus, StatusService, Toast, $translate) {
+angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", function ($state, OvhApiStatus, StatusService, Toast, $translate) {
     var self = this;
 
-    this.loading = {
-        init: true
-    };
+    this.tasks = undefined;
 
-    this.orderBy = "dateToShow.unix";
-    this.reverse = true;
-
-    this.tasks = [];
-
-    function init () {
-        self.loading.init = true;
-
+    self.getTasks = function () {
         return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
             self.tasks = _.map(tasks, StatusService.augmentStatus);
             self.tasks = StatusService.orderStatusNotification(self.tasks);
-            return self.tasks;
+            return {
+                data: self.tasks,
+                meta: {
+                    totalCount: self.tasks.length
+                }
+            };
         }).catch(function (error) {
             return Toast.error([$translate.instant("status_tasks_init_error"), error.data.message].join(" "));
-        }).finally(function () {
-            self.loading.init = false;
         });
-    }
+    };
 
-    init();
+    self.goSeeDetails = function (uuid) {
+        $state.go("status.task.detail", { uuid: uuid });
+    };
 
 });

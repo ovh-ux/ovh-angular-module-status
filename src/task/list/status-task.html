@@ -1,120 +1,19 @@
 <section>
-    <div class="row">
-        <div class="col-xs-12">
-            <table class="oui-table">
-                <thead class="oui-table__headers">
-                <tr>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-click="StatusTask.orderBy = 'product';StatusTask.reverse = !StatusTask.reverse"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'product',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-translate="status_tasks_list_title_product">
-                    </th>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-click="StatusTask.orderBy = 'title';StatusTask.reverse = !StatusTask.reverse"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'title',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-translate="status_tasks_list_title_title">
-                    </th>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'type',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-ng-click="StatusTask.orderBy = 'type'; StatusTask.reverse = !StatusTask.reverse"
-                        data-translate="status_tasks_list_type_title">
-                    </th>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'status',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-ng-click="StatusTask.orderBy = 'status';StatusTask.reverse = !StatusTask.reverse"
-                        data-translate="status_tasks_list_state_title">
-                    </th>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'dateToShow.unix',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-ng-click="StatusTask.orderBy = 'dateToShow.unix';StatusTask.reverse = !StatusTask.reverse"
-                        data-translate="status_tasks_list_date_title">
-                    </th>
-                    <th class="oui-table__header oui-table__cell_sortable"
-                        data-tabindex="0"
-                        data-ng-class="{
-                                'oui-table__cell_sorted': StatusTask.orderBy === 'details',
-                                'oui-table__cell_sortable-asc': !StatusTask.reverse,
-                                'oui-table__cell_sortable-desc': StatusTask.reverse
-                            }"
-                        data-ng-click="StatusTask.orderBy = 'details';StatusTask.reverse = !StatusTask.reverse"
-                        data-translate="status_tasks_list_details_title">
-                    </th>
-                    <th class="oui-table__header text-center">
-                        <b data-translate="status_tasks_action_title"></b>
-                    </th>
-                </tr>
-                </thead>
-                <tbody class="oui-table__body" data-ng-if="StatusTask.tasks.length && !StatusTask.loading.init">
-                <tr class="oui-table__row" tabindex="0"
-                    data-ng-repeat="task in StatusTask.tasks | orderBy:StatusTask.orderBy:StatusTask.reverse">
-                    <td class="oui-table__cell"
-                        data-ng-bind="('status_tasks_list_product_label_' + task.project) | translate"></td>
-                    <td class="oui-table__cell"
-                        data-ng-bind="::task.title"></td>
-                    <td class="oui-table__cell"
-                        data-ng-bind="('status_tasks_list_type_label_' + task.type) | translate"></td>
-                    <td class="oui-table__cell"
-                        data-ng-bind="('status_tasks_list_status_label_' + task.status) | translate"></td>
-                    <td class="oui-table__cell"
-                        data-ng-bind="::task.dateToShow.display"></td>
-                    <td class="oui-table__cell"
-                        data-ng-bind="::task.details"></td>
-                    <td class="oui-table__cell text-center">
-                        <button class="oui-button oui-button_dropdow"
-                                data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                            <i class="ovh-font ovh-font-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a data-ui-sref="status.task.detail({ uuid: task.uuid })"
-                                   href=""
-                                   data-translate="status_tasks_list_see_more"></a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                </tbody>
-                <tbody class="oui-table__body" data-ng-if="!StatusTask.tasks.length && !StatusTask.loading.init">
-                <tr class="oui-table__row" tabindex="0">
-                    <td class="oui-table__cell center" colspan="6"
-                        data-translate="status_tasks_list_no_tasks"></td>
-                </tr>
-                </tbody>
-                <tbody class="oui-table__body" data-ng-if="!StatusTask.tasks.length && StatusTask.loading.init">
-                <tr class="oui-table__row" tabindex="0">
-                    <td class="oui-table__cell text-center" colspan="6">
-                        <spinner name="bubbles-222-fff-32"></spinner>
-                        <p data-translate="status_tasks_list_loading_tasks"></p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <oui-datagrid data-rows-loader="StatusTask.getTasks()">
+        <oui-column data-title="'status_tasks_list_title_title' | translate" data-property="project" data-sortable>
+            {{ "status_tasks_list_product_label_" + $row.project | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_type_title' | translate" data-property="type" data-sortable="desc">
+            {{ "status_tasks_list_type_label_" + $row.type | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_state_title' | translate" data-property="status" data-sortable="desc">
+            {{ "status_tasks_list_status_label_" + $row.status | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_date_title' | translate" data-property="dateToShow.display" data-sortable></oui-column>
+        <oui-column data-title="'status_tasks_list_details_title' | translate" data-property="title" data-sortable></oui-column>
+        <oui-action-menu data-align="end" data-compact>
+            <oui-action-menu-item data-text="{{'status_tasks_list_see_more' | translate}}"
+                                  data-on-click="StatusTask.goSeeDetails($row.uuid)"></oui-action-menu-item>
+        </oui-action-menu>
+    </oui-datagrid>
 </section>
