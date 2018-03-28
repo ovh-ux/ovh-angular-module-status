@@ -25,5 +25,6 @@
    <translation id="status_tasks_list_type_label_upgrade" qtlid="26863">Aggiornamento</translation>
    <translation id="status_tasks_list_product_label_VPS" qtlid="23083">VPS</translation>
    <translation id="status_tasks_list_product_label_PublicCloud" qtlid="251655">Public Cloud</translation>
+   <translation id="status_tasks_list_product_label_Datacenter" qtlid="30802">Datacenter</translation>
    <translation id="status_tasks_list_see_more" qtlid="225192">Visualizza dettagli </translation>
 </translations>
