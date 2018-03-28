@@ -9,11 +9,11 @@
    <translation id="status_tasks_list_type_title" qtlid="2642">Type</translation>
    <translation id="status_tasks_list_state_title" qtlid="8230">Status</translation>
    <translation id="status_tasks_list_date_title" qtlid="24523">Datum</translation>
-   <translation id="status_tasks_list_impact_label_fullUnavailability" qtlid="403049">Service indisponible</translation>
-   <translation id="status_tasks_list_impact_label_downtime" qtlid="403049">Service indisponible</translation>
-   <translation id="status_tasks_list_impact_label_partialUnavailability" qtlid="403062">Service dégradé</translation>
-   <translation id="status_tasks_list_impact_label_none" qtlid="403075">Impact faible</translation>
-   <translation id="status_tasks_list_impact_label_unknown" qtlid="403075">Impact faible</translation>
+   <translation id="status_tasks_list_impact_label_fullUnavailability" qtlid="403049">Service niet beschikbaar</translation>
+   <translation id="status_tasks_list_impact_label_downtime" qtlid="403049">Service niet beschikbaar</translation>
+   <translation id="status_tasks_list_impact_label_partialUnavailability" qtlid="403062">Degraded service</translation>
+   <translation id="status_tasks_list_impact_label_none" qtlid="403075">Low impact</translation>
+   <translation id="status_tasks_list_impact_label_unknown" qtlid="403075">Low impact</translation>
    <translation id="status_tasks_list_status_label_planned" qtlid="37455">Gepland</translation>
    <translation id="status_tasks_list_status_label_inProgress" qtlid="26383">Wordt uitgevoerd</translation>
    <translation id="status_tasks_list_status_label_finished" qtlid="8662">Voltooid</translation>
@@ -25,5 +25,6 @@
    <translation id="status_tasks_list_type_label_upgrade" qtlid="26863">Update</translation>
    <translation id="status_tasks_list_product_label_VPS" qtlid="23083">VPS</translation>
    <translation id="status_tasks_list_product_label_PublicCloud" qtlid="251655">Public Cloud</translation>
+   <translation id="status_tasks_list_product_label_Datacenter" qtlid="30802">Datacenter</translation>
    <translation id="status_tasks_list_see_more" qtlid="225192">De details weergeven</translation>
 </translations>
