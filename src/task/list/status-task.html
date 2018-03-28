@@ -1,0 +1,19 @@
+<section>
+    <oui-datagrid data-rows-loader="StatusTask.getTasks()">
+        <oui-column data-title="'status_tasks_list_title_title' | translate" data-property="project" data-sortable>
+            {{ "status_tasks_list_product_label_" + $row.project | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_type_title' | translate" data-property="type" data-sortable="desc">
+            {{ "status_tasks_list_type_label_" + $row.type | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_state_title' | translate" data-property="status" data-sortable="desc">
+            {{ "status_tasks_list_status_label_" + $row.status | translate }}
+        </oui-column>
+        <oui-column data-title="'status_tasks_list_date_title' | translate" data-property="dateToShow.display" data-sortable></oui-column>
+        <oui-column data-title="'status_tasks_list_details_title' | translate" data-property="title" data-sortable></oui-column>
+        <oui-action-menu data-align="end" data-compact>
+            <oui-action-menu-item data-text="{{'status_tasks_list_see_more' | translate}}"
+                                  data-on-click="StatusTask.goSeeDetails($row.uuid)"></oui-action-menu-item>
+        </oui-action-menu>
+    </oui-datagrid>
+</section>
