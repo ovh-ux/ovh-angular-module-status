@@ -77,7 +77,7 @@ angular.module("ovh-angular-module-status").service("StatusService", ["$q", "$tr
 
         return $q.all({
             translate: $translate.refresh(),
-            tasks: OvhApiStatus.Task().Lexi().query().$promise
+            tasks: OvhApiStatus.Task().v6().query().$promise
         }).then(function (result) {
             var tasks = _.map(result.tasks, function (task) {
                 task.dateToShow = self.getDateToShow(task);
@@ -149,7 +149,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskDetailCtrl", [
     function init () {
         self.loading.init = true;
 
-        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().v6().query().$promise.then(function (tasks) {
             self.task = _.find(tasks, function (task) {
                 return task.uuid === self.currentTaskId;
             });
@@ -211,7 +211,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", ["$stat
     this.tasks = undefined;
 
     self.getTasks = function () {
-        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().v6().query().$promise.then(function (tasks) {
             self.tasks = _.map(tasks, StatusService.augmentStatus);
             self.tasks = StatusService.orderStatusNotification(self.tasks);
             return {

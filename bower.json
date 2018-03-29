@@ -1,40 +1,40 @@
 {
-    "name": "ovh-angular-module-status",
-    "description": "Manage status",
-    "version": "3.0.0",
-    "main": [
-        "./dist/ovh-angular-module-status.min.js",
-        "./dist/ovh-angular-module-status.less"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ovh-ux/ovh-angular-module-status.git"
-    },
-    "author": "OVH SAS",
-    "license": "BSD-3-Clause",
-    "ignore": [
-        "components",
-        "bower_components",
-        "node_modules",
-        "Gruntfile.js",
-        "src",
-        ".jshintrc",
-        ".editorconfig",
-        "example"
-    ],
-    "dependencies": {
-        "angular": "1.6.x",
-        "angular-translate": "2.16.x",
-        "angular-translate-loader-partial": "2.16.x",
-        "lodash": "~3.10.1",
-        "ovh-ui-kit": "^2.1.0",
-        "ovh-ui-angular": "^2.1.0",
-        "ovh-api-services": "^2.0.1",
-        "ovh-angular-toaster": "^0.8.0"
-    },
-    "resolutions": {
-        "angular": "1.6.x",
-        "angular-sanitize": "1.6.x",
-        "angular-translate": "2.16.x"
-    }
+  "name": "ovh-angular-module-status",
+  "description": "Manage status",
+  "version": "3.0.0",
+  "main": [
+    "./dist/ovh-angular-module-status.min.js",
+    "./dist/ovh-angular-module-status.less"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovh-ux/ovh-angular-module-status.git"
+  },
+  "author": "OVH SAS",
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "components",
+    "bower_components",
+    "node_modules",
+    "Gruntfile.js",
+    "src",
+    ".jshintrc",
+    ".editorconfig",
+    "example"
+  ],
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-translate": "2.16.x",
+    "angular-translate-loader-partial": "2.16.x",
+    "lodash": "~3.10.1",
+    "ovh-ui-kit": "^2.1.0",
+    "ovh-ui-angular": "^2.1.0",
+    "ovh-api-services": "^3.0.0",
+    "ovh-angular-toaster": "^0.8.0"
+  },
+  "resolutions": {
+    "angular": "1.6.x",
+    "angular-sanitize": "1.6.x",
+    "angular-translate": "2.16.x"
+  }
 }
