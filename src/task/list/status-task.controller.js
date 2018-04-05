@@ -4,7 +4,7 @@ angular.module("ovh-angular-module-status").controller("StatusTaskCtrl", functio
     this.tasks = undefined;
 
     self.getTasks = function () {
-        return OvhApiStatus.Task().Lexi().query().$promise.then(function (tasks) {
+        return OvhApiStatus.Task().v6().query().$promise.then(function (tasks) {
             self.tasks = _.map(tasks, StatusService.augmentStatus);
             self.tasks = StatusService.orderStatusNotification(self.tasks);
             return {

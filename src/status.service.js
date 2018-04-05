@@ -63,7 +63,7 @@ angular.module("ovh-angular-module-status").service("StatusService", function ($
 
         return $q.all({
             translate: $translate.refresh(),
-            tasks: OvhApiStatus.Task().Lexi().query().$promise
+            tasks: OvhApiStatus.Task().v6().query().$promise
         }).then(function (result) {
             var tasks = _.map(result.tasks, function (task) {
                 task.dateToShow = self.getDateToShow(task);
