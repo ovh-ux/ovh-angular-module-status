@@ -99,17 +99,11 @@ angular.module("ovh-angular-module-status").service("StatusService", ["$q", "$tr
                 };
             });
 
-            var headerTemplate =
-                '<h2 class="oui-navbar-menu__title">' + $translate.instant("status_menu_beta_title") + "</h2>" +
-                '<p class="notification__intro">' + $translate.instant("status_intro") + "</p>" +
-                '<a class="notification__email" href="mailto:feedbackstatus@corp.ovh.com">feedbackstatus@corp.ovh.com</a>';
-
             return {
                 name: "notifications",
                 title: $translate.instant("status_menu_title"),
                 iconClass: "icon-notifications",
                 limitTo: 10,
-                headerTemplate: headerTemplate,
                 footerTitle: $translate.instant("status_menu_see_all"),
                 footerUrl: "#/status/task",
                 subLinks: subLinks,
